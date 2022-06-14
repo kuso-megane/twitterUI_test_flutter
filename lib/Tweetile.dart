@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors, unnecessary_this
+
 import 'package:flutter/material.dart';
 
 class Tweetile extends StatelessWidget {
@@ -5,10 +7,10 @@ class Tweetile extends StatelessWidget {
   final String content;
   final String time;
 
-  Tweetile(
+  const Tweetile(
     {
-      required String this.content,
-      required String this.time,
+      required this.content,
+      required this.time,
       Key? key,
     }
   ) : super(key: key);
