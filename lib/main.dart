@@ -31,7 +31,7 @@ class MyApp extends StatelessWidget {
               Tweetile(content: '', time: '2022/6/14'),
               Tweetile(content: 'ふぅ〜', time: '2022/6/14'),
               Tweetile(content: 'ふぅ〜', time: '2022/6/14'),
-              Tweetile(content: 'ふぅ〜', time: '2022/6/14'),
+              Tweetile(content: 'やばい、', time: '2022/6/12 11:09'),
               Tweetile(content: 'もうぜったい吸いません。ここに宣言します', time: '2022/6/11 5:26'),
               Tweetile(content: '一体何度、同じ罪を犯すのだろう。もうこんな自分が大嫌い、、、、。', time: '2022/6/10 13:02'),
               Tweetile(content: 'きもぢぃ〜', time: '2022/6/10 12:15'),
