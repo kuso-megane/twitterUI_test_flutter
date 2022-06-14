@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'Tweetile.dart';
 
 void main() {
   runApp(const MyApp());
@@ -15,7 +16,7 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           backgroundColor: Colors.black,
           title: const Text(
-            'ORITA',
+            'ORITAのオクスリ日記',
             style: TextStyle(
               fontWeight: FontWeight.w900,
               fontSize: 16,
@@ -24,37 +25,26 @@ class MyApp extends StatelessWidget {
           ),
         ),
 
-        body: Padding(
-          padding: const EdgeInsets.all(8.0),
-          child: Row(
-            crossAxisAlignment: CrossAxisAlignment.start,
+        body: SingleChildScrollView(
+          child:   Column(
             children: [
-              CircleAvatar(
-                backgroundImage: ,
-              ),
-
-              Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Row(
-                      children: [
-                        Text('fafaea'),
-                        SizedBox(width: 8),
-                        Text('fasfag')
-                      ],
-                  ),
-
-                  SizedBox(height: 4,),
-                  Text('ppp')
-                ],
-              ),
+              Tweetile(content: '', time: '2022/6/14'),
+              Tweetile(content: 'ふぅ〜', time: '2022/6/14'),
+              Tweetile(content: 'ふぅ〜', time: '2022/6/14'),
+              Tweetile(content: 'ふぅ〜', time: '2022/6/14'),
+              Tweetile(content: 'もうぜったい吸いません。ここに宣言します', time: '2022/6/11 5:26'),
+              Tweetile(content: '一体何度、同じ罪を犯すのだろう。もうこんな自分が大嫌い、、、、。', time: '2022/6/10 13:02'),
+              Tweetile(content: 'きもぢぃ〜', time: '2022/6/10 12:15'),
+              Tweetile(content: 'ふぅ〜', time: '2022/6/10 12:13'),
             ],
           ),
-        ),
+        )
+        
       ),
     );
 
 
   }
 }
+
 
